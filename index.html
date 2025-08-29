@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
     <title>Document</title>
   </head>
   <body
@@ -29,11 +30,20 @@
       </div>
     </main>
 
+<script>
+  $(document).ready(function() {
+    $("button").click(function() {
+      $("#p1").text("Hello World!, from jQuery");
+    });
+  });
+</script>
+
+
     <button type="button" onclick="changeText()">Click Me!</button>
     <p id="p1">Hello World!, from HTML</p>
 
     <footer>
-      <p>Copyright © 2025 <a href="www.cybernostra.com">Cybernostra, Inc.</a></p>
+      <p>Copyright © 2025 <a href="https://www.cybernostra.com">Cybernostra, Inc.</a></p>
     </footer>
   </body>
 </html>
